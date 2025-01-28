@@ -16,10 +16,10 @@ load_dotenv()
 from langchain_groq import ChatGroq
 
 # Import prompts
-from prompts import retrieval_marketing_agent_initial_prompt, retrieval_marketing_agent_rephrase_prompt
+from .prompts import retrieval_marketing_agent_initial_prompt, retrieval_marketing_agent_rephrase_prompt
 
 # Import guard rails
-from guard.retrieval_based_guardrail import RetrievalBasedGuardrail
+from .guard.retrieval_based_guardrail import RetrievalBasedGuardrail
 
 # Definir função para rodar llm RAG
 def run_llm(query, chat_history=[], set_stream_lit_secrets=False):
