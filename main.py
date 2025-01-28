@@ -1,7 +1,7 @@
 # Import required packages
 import streamlit as st
 from streamlit_chat import message
-from src.agent.agent import run_llm
+from app.agent.agent import run_llm
 
 # Page configuration
 st.set_page_config(
